@@ -1,2 +1,4 @@
 # patricio-rey-y-sus-vectorcitos-de-ricota
-Búsqueda por similaritud semántica para canciones de los Redondos
+Búsqueda por similitud semántica para canciones de Patricio Rey y sus Redonditos de Ricota.
+
+Ver: https://github.com/dccuchile/spanish-word-embeddings

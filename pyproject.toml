@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "king-patrice"
+version = "0.1.0"
+description = ""
+authors = ["Federico Tedin <federicotedin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+beautifulsoup4 = "*"
+requests = "*"
+PyYAML = "*"
+gensim = "*"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
