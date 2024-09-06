@@ -87,7 +87,7 @@ def main():
 
         try:
             min_similarity = float(q)
-            print("coeficiente de similaridad mínimo:", min_similarity)
+            print("coeficiente de similitud mínimo actual:", min_similarity)
             continue
         except ValueError:
             pass
@@ -104,7 +104,7 @@ def main():
                     results += 1
                     print(line.song.str_line(line))
                     print()
-                    print("similaridad:", similarity)
+                    print("similitud:", similarity)
                     print()
 
         print("resultados:", results)
