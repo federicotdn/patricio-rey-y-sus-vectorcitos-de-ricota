@@ -22,6 +22,8 @@ similitud: 0.54570127
 similitud: 0.5460269
 ```
 
+En criollo: dada una palabra, busca palabras relacionadas en letras de los Redondos (por ejemplo, "insecto" -> "hormiga").
+
 ## Instalar
 
 Se requiere de Python 3.11 o superior así también como [Poetry](https://python-poetry.org/).
@@ -49,7 +51,7 @@ make run
 
 El script solicitará una palabra y mostrará las canciones de Patricio Rey y sus Redonditos de Ricota que contienen la palabra ingresada, ordenadas por similitud semántica. Por ejemplo, buscando por la palabra "noche" se obtienen canciones con las palabras "amanecer", "noche", "día", etc.
 
-Por defecto, la [similitud coseno](https://es.wikipedia.org/wiki/Similitud_coseno) mínima para encontrar canciones es de 0.5. Este valor puede ser modificado ingresando un número en lugar de una palabra (por ejemplo, `0.6`). Modificando este valor se pueden obtener resultados más o menos restrictivos.
+Por defecto, la [similitud coseno](https://es.wikipedia.org/wiki/Similitud_coseno) mínima para encontrar canciones es de `0.5`. Este valor puede ser modificado ingresando un número en lugar de una palabra (por ejemplo, `0.6`). Modificando este valor se pueden obtener resultados más o menos restrictivos.
 
 ## Licencia
 
