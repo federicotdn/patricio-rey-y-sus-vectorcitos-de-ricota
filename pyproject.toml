@@ -1,20 +1,19 @@
-[tool.poetry]
-name = "king-patrice"
+[project]
+name = "patricio-rey-y-sus-vectorcitos-de-ricota"
 version = "0.1.0"
 description = ""
-authors = ["Federico Tedin <federicotedin@gmail.com>"]
+authors = [{ name = "Federico Tedin", email = "federicotedin@gmail.com" }]
 readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4",
+    "requests",
+    "PyYAML",
+    "gensim",
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-beautifulsoup4 = "*"
-requests = "*"
-PyYAML = "*"
-gensim = "*"
+[dependency-groups]
+dev = ["ruff"]
 
-[tool.poetry.group.dev.dependencies]
-ruff = "*"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+package = false

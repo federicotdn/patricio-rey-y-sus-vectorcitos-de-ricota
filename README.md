@@ -26,13 +26,12 @@ En criollo: dada una palabra, busca palabras relacionadas en letras de los Redon
 
 ## Instalar
 
-Se requiere de Python 3.11 o superior así también como [Poetry](https://python-poetry.org/).
+Se requiere solo de [uv](https://docs.astral.sh/uv/).
 **Se recomienda contar con al menos 16 GB de RAM (preferiblemente 32).**
 
 ```bash
-git clone https://github.com/federicotdn/patricio-rey-y-sus-vectorcitos-de-ricota.git
-cd patricio-rey-y-sus-vectorcitos-de-ricota
-poetry install
+git clone https://github.com/federicotdn/patricio-rey-y-sus-vectorcitos-de-ricota.git pr
+cd patricio-rey-y-sus-vectorcitos-de-ricota pr
 ```
 
 Luego, se debe descargar el archivo de vectores FastText SUC para texto en español (formato `.bin`) de https://github.com/dccuchile/spanish-word-embeddings:
@@ -49,7 +48,9 @@ Una vez instaladas las dependencias y descargado el modelo, se puede ejecutar el
 make run
 ```
 
-El script solicitará una palabra y mostrará las canciones de Patricio Rey y sus Redonditos de Ricota que contienen la palabra ingresada, ordenadas por similitud semántica. Por ejemplo, buscando por la palabra "noche" se obtienen canciones con las palabras "amanecer", "noche", "día", etc.
+La receta automáticamente instala las dependencias de Python necesarias.
+
+El script solicita una palabra y muestra las canciones de Patricio Rey y sus Redonditos de Ricota que contienen la palabra ingresada, ordenadas por similitud semántica. Por ejemplo, buscando por la palabra "noche" se obtienen canciones con las palabras "amanecer", "noche", "día", etc.
 
 Por defecto, la [similitud coseno](https://es.wikipedia.org/wiki/Similitud_coseno) mínima para encontrar canciones es de `0.5`. Este valor puede ser modificado ingresando un número en lugar de una palabra (por ejemplo, `0.6`). Modificando este valor se pueden obtener resultados más o menos restrictivos.
 
